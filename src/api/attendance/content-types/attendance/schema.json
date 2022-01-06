@@ -4,7 +4,8 @@
   "info": {
     "singularName": "attendance",
     "pluralName": "attendances",
-    "displayName": "Attendance"
+    "displayName": "Attendance",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
+    },
+    "Location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "location.geo-location"
     }
   }
 }
