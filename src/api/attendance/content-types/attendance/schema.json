@@ -14,13 +14,26 @@
   "attributes": {
     "user": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "attendances"
     },
-    "Location": {
+    "location": {
       "type": "component",
       "repeatable": false,
       "component": "location.geo-location"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "checkin",
+        "checkout"
+      ]
+    },
+    "office": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::office.office"
     }
   }
 }

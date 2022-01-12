@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_location_addresses",
+  "info": {
+    "displayName": "Address",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "province": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "district": {
+      "type": "string"
+    },
+    "postal": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    }
+  }
+}
