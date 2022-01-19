@@ -45,6 +45,9 @@
                                   }
                                 }
                               },
+                              "phone": {
+                                "type": "string"
+                              },
                               "createdAt": {
                                 "type": "string",
                                 "format": "date-time"
@@ -646,6 +649,9 @@
                                 }
                               }
                             },
+                            "phone": {
+                              "type": "string"
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -1133,6 +1139,9 @@
                           }
                         }
                       },
+                      "phone": {
+                        "type": "string"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -1214,6 +1223,9 @@
                                   "type": "string"
                                 }
                               }
+                            },
+                            "phone": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -1725,6 +1737,9 @@
                                 }
                               }
                             },
+                            "phone": {
+                              "type": "string"
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -2222,6 +2237,9 @@
                             "type": "string"
                           }
                         }
+                      },
+                      "phone": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",

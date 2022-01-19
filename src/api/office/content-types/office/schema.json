@@ -19,6 +19,9 @@
       "type": "component",
       "repeatable": false,
       "component": "location.address"
+    },
+    "phone": {
+      "type": "string"
     }
   }
 }
