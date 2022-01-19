@@ -35,11 +35,22 @@ module.exports = (plugin) => {
 
     const fUser = await strapi.query("plugin::users-permissions.user").findOne({
       where: { id: user.id },
-      populate: ["role", "avatar", "attendances"],
+      populate: ["role", "avatar", "attendances", "attendances.office"],
     });
 
     ctx.body = await sanitizeOutput(fUser, ctx);
   };
 
+  plugin.controllers.user.find = async (ctx) => {
+    const users = await strapi
+      .query("plugin::users-permissions.user")
+      .findMany({ where: ctx.query.filters, populate: ["role", "avatar"] });
+
+    // ctx.body = users;
+    ctx.body = await Promise.all(
+      users.map((user) => sanitizeOutput(user, ctx))
+    );
+    // ctx.body = users.map((user) => sanitizeOutput(user, ctx));
+  };
   return plugin;
 };
