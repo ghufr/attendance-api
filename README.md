@@ -1,3 +1,7 @@
 # Strapi application
 
-A quick description of your strapi application
+## How to Run The App
+
+### Steps
+
+- run `npm run develop`
